@@ -183,8 +183,8 @@ for a in numbers:
 correct_username = "admin"
 correct_password = "1234"
 for i in range(3):
-    username = "admin"
-    password = "1234"
+    username = input("enter the username: ")
+    password = input("enter password: ")
     if username=="admin" and password=="1234":
         print("Login successful")
         break
