@@ -125,7 +125,7 @@ greet(0)
 #odd and even
 def greet(a):
 
-    if a%2==0:
+    if a %2==0:
         print('a is an even number')
     else:
         print("oddd")

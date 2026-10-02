@@ -1,0 +1,134 @@
+#1. Write a function that takes a number as input and returns whether the number is even or odd.
+def greet(a):
+
+    if a %2==0:
+        return('a is an even number')
+    else:
+        return("oddd")
+
+print(greet(10))
+#output:a is an even number
+#2. Write a function that takes three numbers as input and returns the largest number among them. 
+def largest(a,b,c):
+   
+    if a>b and a>c:
+        return('a is greater')
+    elif b>a and b>c:
+        return('b is greater')
+    else :
+        return('c is greater')
+
+print(largest(5,7,3))
+#output:b is greater
+#3. Write a function that takes a list of numbers as input and returns the sum of all elements in the list. 
+def list_sum(numbers):
+    total = 0
+
+    for a in numbers:
+        total += a
+    return total
+
+print(list_sum([10, 20, 30, 40]))
+#output:100
+#4. Write a function that takes a list of numbers as input and returns a new list containing only even numbers. 
+def even_numbers(numbers):
+    result = []
+
+    for a in numbers:
+        if a % 2 == 0:
+            result.append(a)
+    return result
+
+print(even_numbers([1, 2, 3, 4, 5, 6]))
+#output:[2,4,6]
+#5. Write a function that takes a string as input and returns the length of the string.
+def string_length(text):
+    return len(text)
+
+print(string_length("Hello")) 
+#output:5
+#6. Write a function that takes a string as input and returns the string in uppercase. 
+def uppercase(text):
+    return text.upper()
+
+print(uppercase("Hello"))
+#output:HELLO
+#7. Write a function that takes a number as input and returns whether the number is positive, negative, or zero. 
+def check_number(a):
+    if a > 0:
+        return "Positive"
+    elif a < 0:
+        return "Negative"
+    else:
+        return "Zero"
+
+print(check_number(5))
+#output:positive
+#8. Write a function that takes a number as input and returns is a multiple of both 3 and 5, otherwise returns False . True if the number 
+def check_multiple(a):
+    if a % 3 == 0 and a % 5 == 0:
+        return True
+    else:
+        return False
+
+print(check_multiple(15))
+#output:true
+#9. Write a function that takes a list of numbers as input and returns the maximum value in the list. 
+def maximum(numbers):
+    max_value = numbers[0]
+
+    for a in numbers:
+        if a > max_value:
+            max_value = a
+
+    return max_value
+
+print(maximum([10, 25, 5, 40, 15]))
+#output:40
+#10. Write a function that takes marks as input and returns the grade according to the following rules:
+#A for marks  90 
+#B for marks  75 
+#C for marks  60 
+#Fail for marks below 60 
+def grade(marks):
+    if marks >= 90:
+        return "A"
+    elif marks >= 75:
+        return "B"
+    elif marks >= 60:
+        return "C"
+    else:
+        return "Fail"
+
+print(grade(85))
+#output:B
+#11. Write a function that takes a price as input and returns the discounted price after applying a 10% discount. 
+def discounted_price(price):
+    discount = price * 10 / 100
+    final_price = price - discount
+
+    return final_price
+
+print(discounted_price(1000))
+#output:900.0
+#12. Write a function that takes a list of numbers as input and returns the count of even and odd numbers. 
+def count_even_odd(numbers):
+    even = 0
+    odd = 0
+
+    for a in numbers:
+        if a % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+    return even, odd
+
+print(count_even_odd([1, 2, 3, 4, 5, 6]))
+#output:(3, 3)
+#13. Write a function that takes a temperature in Celsius as input and returns the temperature in Fahrenheit. 
+def celsius_to_fahrenheit(celsius):
+    fahrenheit = (celsius * 9 / 5) + 32
+    return fahrenheit
+
+print(celsius_to_fahrenheit(25))
+#output:77.0
